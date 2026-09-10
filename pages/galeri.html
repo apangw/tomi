@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Galeri | Tommy Vercetti
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="https://cdn.tailwindcss.com">
+        </script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'vc-bg': '#FDFBF7',
+                            'vc-surface': '#FFFFFF',
+                            'vc-text': '#2D3748',
+                            'vc-text-light': '#718096',
+                            'vc-coral': '#F28C8C',
+                            'vc-sage': '#A3C4BC',
+                            'vc-blue': '#93C5FD',
+                            'vc-orange': '#F4B986',
+                            'vc-cyan': '#88C0D0'
+                        },
+                        fontFamily: {
+                            editorial: ['Playfair Display', 'serif'],
+                            body: ['Inter', 'sans-serif'],
+                            display: ['Oswald', 'sans-serif']
+                        }
+                    }
+                }
+            };
+        </script>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <script src="../assets/js/script.js" defer>
+        </script>
+    </head>
+    <body class="font-body">
+        <header id="navbar" class="fixed w-full top-0 z-50 bg-vc-bg/90 backdrop-blur-md border-b border-vc-text/5">
+            <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <a href="../index.html" class="font-editorial font-bold text-2xl text-vc-text">
+                    Tommy
+                    <span class="text-vc-coral italic font-normal text-lg">
+                        Vercetti
+                    </span>
+                </a>
+                <div class="hidden md:flex gap-7 text-xs tracking-widest uppercase">
+                    <a href="../index.html">
+                        Home
+                    </a>
+                    <a href="biografi.html">
+                        Biografi
+                    </a>
+                    <a href="timeline.html">
+                        Timeline
+                    </a>
+                    <a href="karakter.html">
+                        Karakter
+                    </a>
+                    <a href="cerita.html">
+                        Cerita
+                    </a>
+                    <a href="empire.html">
+                        Empire
+                    </a>
+                    <a class="text-vc-coral" href="galeri.html">
+                        Galeri
+                    </a>
+                    <a class="text-vc-cyan" href="radio.html">
+                        Radio
+                    </a>
+                </div>
+                <button data-menu-button class="md:hidden text-2xl">
+                    <i class="fa-solid fa-bars-staggered">
+                    </i>
+                </button>
+            </nav>
+            <div data-mobile-menu class="hidden absolute top-20 left-0 w-full bg-white border-b p-6 space-y-5 uppercase tracking-widest md:hidden">
+                <a class="block" href="../index.html">
+                    Home
+                </a>
+                <a class="block" href="biografi.html">
+                    Biografi
+                </a>
+                <a class="block" href="timeline.html">
+                    Timeline
+                </a>
+                <a class="block" href="karakter.html">
+                    Karakter
+                </a>
+                <a class="block" href="cerita.html">
+                    Cerita
+                </a>
+                <a class="block" href="empire.html">
+                    Empire
+                </a>
+                <a class="block text-vc-coral" href="galeri.html">
+                    Galeri
+                </a>
+                <a class="block text-vc-cyan" href="radio.html">
+                    Radio
+                </a>
+            </div>
+        </header>
+        <main class="pt-20">
+            <section class="max-w-7xl mx-auto px-6 py-24">
+                <div class="text-center mb-16 reveal">
+                    <h1 class="font-editorial text-5xl text-vc-text">
+                        Arsip Visual
+                    </h1>
+                    <p class="text-vc-text-light mt-3">
+                        Momen-momen penting di Vice City.
+                    </p>
+                </div>
+                <div class="masonry reveal">
+                    <img class="masonry-item w-full" src="https://placehold.co/600x800/FDFBF7/2D3748?text=TOMMY+1" alt="Tommy Vercetti">
+                    <img class="masonry-item w-full" src="https://placehold.co/800x600/E2E8F0/2D3748?text=VICE+CITY" alt="Vice City">
+                    <img class="masonry-item w-full" src="https://placehold.co/600x900/FDFBF7/F28C8C?text=ACTION" alt="Action">
+                    <img class="masonry-item w-full" src="https://placehold.co/800x500/E2E8F0/2D3748?text=ESTATE" alt="Estate">
+                    <img class="masonry-item w-full" src="https://placehold.co/600x600/FDFBF7/88C0D0?text=PORTRAIT" alt="Portrait">
+                    <img class="masonry-item w-full" src="https://placehold.co/800x1200/E2E8F0/2D3748?text=NEON+NIGHTS" alt="Neon nights">
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

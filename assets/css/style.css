@@ -1,0 +1,79 @@
+        /* Base styles */
+        body {
+            background-color: #FDFBF7;
+            color: #2D3748;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar yang elegan */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #E2E8F0; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #CBD5E1; }
+
+        /* Typography Highlights */
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4.5rem;
+            line-height: 4rem;
+            padding-right: 0.75rem;
+            padding-top: 0.25rem;
+            font-family: 'Playfair Display', serif;
+            color: #F28C8C; /* Soft coral */
+            font-weight: 700;
+        }
+
+        /* Editorial Elements */
+        .editorial-border {
+            border: 1px solid rgba(45, 55, 72, 0.08);
+        }
+        
+        .subtle-shadow {
+            box-shadow: 0 10px 40px -10px rgba(0,0,0,0.03);
+        }
+
+        /* SPA Page Transitions */
+        .page-section {
+            display: none;
+            opacity: 0;
+            transform: translateY(15px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .page-section.active-page {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.3, 0, 0.2, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Masonry Gallery */
+        .masonry {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 640px) { .masonry { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry { column-count: 3; } }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Hover Interactions */
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px -5px rgba(0,0,0,0.08);
+        }
